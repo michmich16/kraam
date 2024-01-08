@@ -8,12 +8,48 @@
     <link rel="stylesheet" href="/Assets/css/main.css">
     <script src="/Assets/js/gallery1.js" defer></script>
     <script src="/Assets/js/gallery2.js" defer></script>
+    <script src="/Assets/js/cookies.js" defer></script>
     <style>
         
     </style>
 </head>
 
-<body>
+<body id="myBody">
+     <!-- Cookie Policy Modal -->
+     <div id="Cookie_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+
+            <h2>Cookie politik</h2>
+            <p>Et cookiebanner er en pop-up på dit website, der fortæller dine besøgende, at du bruger cookies.
+                Fair nok, du har sikkert set dem. “Vi bruger cookies. Hvis du fortsætter, accepterer du”. Men faktisk
+                skal et cookiebanner ikke kun betragtes som information om cookies. Det skal betragtes som
+                en samtykke-pop-up.
+            </p>
+            <p>Hvorfor? Fordi når du bruger cookies og især cookies, der indsamler dine brugeres personlige data, er der
+                et par lovgivninger, der træder i kraft.
+
+                De fleste af disse love handler om behandlingen af personoplysninger. Og det er, hvad størstedelen af
+                alle cookies indsamler. Personlige data om din besøgende. Der kan blive brugt til markedsføringsformål.
+            </p>
+            <section>
+
+                <input type="checkbox" id="req" name="req" checked />
+                <label for="func">Funktion</label><br>
+
+                <input type="checkbox" id="stat" name="stat" checked />
+                <label for="stat">Statestik</label><br>
+
+                <input type="checkbox" id="func" name="func" checked />
+                <label for="promo">Promotion</label><br>
+            </section>
+
+            <span class="Cookie_button_selected" onclick="closeModal('Cookie_container')">Valgte</span>
+            <span class="Cookie_button_all" onclick="closeModal('Cookie_container')">Alle</span>
+
+        </div>
+
+    </div>
     <div class="container-main">
         <!-- NAVIGATION -->
         <nav class="nav-bar">

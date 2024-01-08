@@ -1,0 +1,91 @@
+
+.noScroll {
+    overflow: hidden;
+}
+
+#Cookie_container {
+    color: aliceblue;
+}
+
+.Cookie_button_selected {
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #eee;
+    background-color: rgb(34, 39, 187);
+    font-weight: bold;
+    transition: 600ms;
+}
+
+.Cookie_button_selected:hover {
+    background-color: rgb(8, 14, 179);
+    transition: 400ms;
+}
+
+.Cookie_button_all {
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #eee;
+    background-color: rgb(27, 104, 192);
+    font-weight: bold;
+    transition: 600ms;
+}
+
+.Cookie_button_all:hover {
+    background-color: rgb(0, 90, 192);
+    transition: 400ms;
+}
+
+.modal {
+    display: none;
+    /* MODAL SHOULD HIDDEN BY DEFAULT */
+    position: absolute;
+    z-index: 9999;
+    /* Sit on top */
+    left: 0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
+    height: 100%;
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #000000c6;
+    /* TRANSPARENT FALLBACK FILL */
+    margin: auto;
+}
+
+.modal div section {
+    padding-bottom: 1rem;
+}
+
+.modal>div {
+    /*FIRST DIVERSION IN ".modal"*/
+    position: relative;
+    color: #eee;
+    top: 0;
+    padding: 1rem;
+    width: 90%;
+    /*WIDTH OF THE "MODAL - CONTAINER"*/
+    margin: auto;
+}
+
+/* MODAL ANIMATION */
+.modal>div {
+    margin-top: 1rem;
+    animation: modal-content 600ms ease-in-out;
+}
+
+@keyframes modal-content {
+    from {
+        top: -100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
