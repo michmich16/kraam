@@ -6,43 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kraam.</title>
     <link rel="stylesheet" href="/Assets/css/main.css">
+    <script src="/Assets/js/gallery1.js" defer></script>
     <style>
-        body {
-            background-image: url(/Assets/images/giphy.gif);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+        .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
         }
 
-        hgroup h1 {
-            font-family: Courgette;
-            margin: 0;
+        /* Style the images inside the grid */
+        .column img {
+            opacity: 0.8;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .column img:hover {
+            opacity: 1;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* The expanding image container (positioning is needed to position the close button and the text) */
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        /* Expanding image text */
+        #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
             color: white;
-            text-align: center;
-            /* display: flex;
-            justify-content: center; */
-            font-size: 60px;
-            padding-top: 12rem;
-            margin-block-start: 0;
-            margin-block-end: 0;
+            font-size: 20px;
         }
 
-        hgroup li {
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
+        /* Closable button inside the image */
+        .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
     <div class="container-main">
+        <nav class="nav-bar">
+            <ul class="nav-logo">
+                <li><a href="#">Kraam.</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
         <hgroup>
-            <H1>Kraam.</H1>
-            <li>Production House</li>
+            <nav>
+                <H1>Kraam.</H1>
+            </nav>
         </hgroup>
+        <section class="gallery-1">
+        </section>
     </div>
 
 </body>
