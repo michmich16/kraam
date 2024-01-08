@@ -1,0 +1,32 @@
+.gallery-1 {
+    padding: 1rem;
+}
+
+.gallery-1 img {
+    width: 100%;
+}
+
+.gallery-1-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+
+}
+
+.gallery-1-images div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.gallery-1-images div img {
+    transition: 500ms;
+    filter: saturate(0);
+
+}
+
+.gallery-1-images div img:hover {
+    cursor: pointer;
+    filter: saturate(1);
+    transition: 500ms;
+}

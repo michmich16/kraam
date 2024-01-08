@@ -8,53 +8,8 @@
     <link rel="stylesheet" href="/Assets/css/main.css">
     <script src="/Assets/js/gallery1.js" defer></script>
     <style>
-        .column {
-            float: left;
-            width: 25%;
-            padding: 10px;
-        }
-
-        /* Style the images inside the grid */
-        .column img {
-            opacity: 0.8;
-            width: 100%;
-            cursor: pointer;
-        }
-
-        .column img:hover {
-            opacity: 1;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* The expanding image container (positioning is needed to position the close button and the text) */
-        .container {
-            position: relative;
-            display: none;
-        }
-
-        /* Expanding image text */
-        #imgtext {
-            position: absolute;
-            bottom: 15px;
-            left: 15px;
-            color: white;
-            font-size: 20px;
-        }
-
-        /* Closable button inside the image */
-        .closebtn {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            color: white;
-            font-size: 35px;
-            cursor: pointer;
+        .container-main {
+            padding: 0 1rem;
         }
     </style>
 </head>
@@ -77,7 +32,31 @@
                 <H1>Kraam.</H1>
             </nav>
         </hgroup>
+        <!-- GALLERY 1 -->
         <section class="gallery-1">
+            <header>
+                <h2>Gallery 1</h2>
+            </header>
+            <div class="gallery-1-images">
+                <img src="/Assets/images/emo-kitchen/Dinny-01.jpg" alt="" id="imgLarge">
+                <div>
+                    <img src="/Assets/images/emo-kitchen/Dinny-02.jpg" alt="">
+                    <img src="/Assets/images/emo-kitchen/Dinny-03.jpg" alt="">
+                    <img src="/Assets/images/emo-kitchen/Dinny-04.jpg" alt="">
+                    <img src="/Assets/images/emo-kitchen/Dinny-05.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- GALLERY 2 -->
+        <section class="section-gallery">
+            <header>
+                <h2>Dinny Gallery</h2>
+            </header>
+            <img id="gallery_back" src="/assets/images/back.png" alt="arrow back">
+            <figure>
+                <img id="gallery_image" src="Assets/images/GFX/Dinny-01.jpg" alt="Gallery One">
+            </figure>
+            <img id="gallery_forward" src="/assets/images/back.png" alt="arrow forward">
         </section>
     </div>
 
