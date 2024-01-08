@@ -30,3 +30,11 @@
     filter: saturate(1);
     transition: 500ms;
 }
+
+@media (max-width: 1000px) {
+    .gallery-1-images{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}

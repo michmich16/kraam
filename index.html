@@ -10,6 +10,7 @@
     <script src="/Assets/js/gallery2.js" defer></script>
     <script src="/Assets/js/cookies.js" defer></script>
     <script src="/Assets/js/validation.js" defer></script>
+    <script src="/Assets/js/nav.js" defer></script>
     <style>
 
     </style>
@@ -117,24 +118,40 @@
     <!-- END OF MODAL -->
     <div class="container-main">
         <!-- NAVIGATION -->
-        <nav class="nav-bar">
-            <ul class="nav-logo">
-                <li><a href="#">Kraam.</a></li>
-            </ul>
-            <ul class="nav-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#" onclick="displayModal('modal_container')">Sign Up</a></li>
-                <li><a href="#" onclick="displayModal('signIn_container')">Log In</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+        <nav class="flexmenu">
+            <div class="flex">
+                <div class="menu">
+                    <li><a href="#">Kraam.</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#">Home</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#" onclick="displayModal('modal_container')">Sign Up</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#" onclick="displayModal('signIn_container')">Log In</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#">About</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#">Gallery</a></li>
+                </div>
+                <div class="menu">
+                    <li><a href="#">Contact Us</a></li>
+                </div>
+                <div class="mobile-menu">
+                    <span class="menu-icon open">&#x2261;</span>
+                    <span class="menu-icon close">&#x2715;</span>
+                </div>
+            </div>
         </nav>
         <!-- HERO -->
         <hgroup>
-            <nav>
+            <div>
                 <H1>Kraam.</H1>
-            </nav>
+            </div>
         </hgroup>
         <!-- GALLERY 1 -->
         <section class="gallery-1">
