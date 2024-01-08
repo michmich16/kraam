@@ -1,0 +1,41 @@
+.myform{
+    background-color: #333;
+    color: #333;
+    border: solid 4px black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .myform label{
+    font-size: 0.8rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+    color: white;
+
+  }
+  .myform input{
+    padding: 0.3rem;
+    margin: 0 0.5rem;
+    border: solid 2px black;
+    border-radius: 8px;
+  }
+  .myform input::placeholder{
+    color: grey;
+  }
+  /* BUTTON STYLING */
+  .myform input[type=submit]{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem;
+    background-color: rgb(37, 199, 29);
+    color: black;
+    border: none;
+    cursor: pointer;
+    filter: saturate(0.6);
+    transition: 400ms;
+  }
+  .myform input[type=submit]:hover{
+    filter: saturate(1.5);
+    color: #fff;
+  }

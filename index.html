@@ -9,14 +9,78 @@
     <script src="/Assets/js/gallery1.js" defer></script>
     <script src="/Assets/js/gallery2.js" defer></script>
     <script src="/Assets/js/cookies.js" defer></script>
+    <script src="/Assets/js/validation.js" defer></script>
     <style>
-        
+
     </style>
 </head>
 
 <body id="myBody">
-     <!-- Cookie Policy Modal -->
-     <div id="Cookie_container" class="modal">
+    <!-- START OF SignUp MODAL -->
+    <div id="modal_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+            <span id="modal_close" onclick="closeModal('modal_container')" title="CLOSE THIS IMAGE">&times;</span>
+
+
+            <div id="modalContent">
+                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
+                <form class="myform" id="MyForm" action="" novalidate onsubmit="return validateForm(this);">
+
+                    <label for="fname">Fornavn</label>
+                    <input type="text" id="fname" name="fname" required placeholder="Type Your First Name" />
+
+                    <label for="lname">Efternavn:</label>
+                    <input type="text" id="lname" name="lname" required placeholder="Type Your Last Name" />
+
+                    <label for="adresse">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Type Your Email" />
+
+                    <label for="password">Password:</label><area shape="" coords="" href="" alt="">
+                    <input type="password" id="password" name="password" required placeholder="Password" />
+
+                    <label for="confirmpassword">Gentag Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required
+                        placeholder="Type Your Name" />
+                    <input type="submit" value="Tilmeld" />
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF MODAL -->
+    <!-- START OF SignIn MODAL -->
+    <div id="signIn_container" class="modal">
+        <div>
+            <!-- CLOSING  BUTTON -->
+            <span id="modal_close" onclick="closeModal('signIn_container')" title="CLOSE THIS IMAGE">&times;</span>
+
+
+            <div id="modalContent">
+                <!-- HER STARTER FORMEN (BEMÆRK: "novalidate" SKAL FJERNES ;0) -->
+                <form novalidate class="myform">
+
+
+                    <label for="Sname">Username:</label>
+                    <input type="text" id="Sname" name="Sname" required placeholder="Type Your Last Username" />
+
+
+                    <label for="Spassword">Password:</label><area shape="" coords="" href="" alt="">
+                    <input type="password" id="Spassword" name="Spassword" required placeholder="Password" />
+
+                    <input type="submit" value="Sign in" />
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF MODAL -->
+    <!-- START OF Cookie Policy MODAL -->
+    <!-- Cookie Policy Modal -->
+    <div id="Cookie_container" class="modal">
         <div>
             <!-- CLOSING  BUTTON -->
 
@@ -50,6 +114,7 @@
         </div>
 
     </div>
+    <!-- END OF MODAL -->
     <div class="container-main">
         <!-- NAVIGATION -->
         <nav class="nav-bar">
@@ -58,6 +123,8 @@
             </ul>
             <ul class="nav-right">
                 <li><a href="#">Home</a></li>
+                <li><a href="#" onclick="displayModal('modal_container')">Sign Up</a></li>
+                <li><a href="#" onclick="displayModal('signIn_container')">Log In</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -95,6 +162,10 @@
             </figure>
             <img id="gallery_forward" src="/Assets/images/emo-kitchen/Arrow.png" alt="arrow forward">
         </section>
+        <!-- GLOBAL FOOTER -->
+        <footer>
+
+        </footer>
     </div>
 
 </body>

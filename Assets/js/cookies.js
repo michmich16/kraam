@@ -10,17 +10,17 @@ document.getElementById("myBody").classList.toggle("noScroll"); //block scrollin
 
 
 // open modal (bruges til login/signin modal)
-//  function displayModal(id) {
-//      document.getElementById(id).style.display = "block";
-//      document.getElementById("myBody").classList.toggle("noScroll");
+  function displayModal(id) {
+      document.getElementById(id).style.display = "block";
+      document.getElementById("myBody").classList.toggle("noScroll");
 
-//  }
+  }
 
-//  function displayGallery(id, src, desc) {
-//      document.getElementById(id).style.display = "block";
-//      document.getElementById("desc").innerHTML = desc;
-//      document.getElementById("myBody").classList.toggle("noScroll");
-//  }
+  function displayGallery(id, src, desc) {
+      document.getElementById(id).style.display = "block";
+      document.getElementById("desc").innerHTML = desc;
+      document.getElementById("myBody").classList.toggle("noScroll");
+ }
 
 //close modal
 function closeModal(id) {
