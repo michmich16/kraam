@@ -6,6 +6,10 @@
     width: 100%;
 }
 
+.gallery-1 header{
+    margin: 0.5rem;
+}
+
 .gallery-1-images {
     display: grid;
     grid-template-columns: 1fr 1fr;

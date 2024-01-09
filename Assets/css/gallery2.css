@@ -17,7 +17,7 @@
 }
 
 .section-gallery figure img {
-    width: 55%;
+    width: 50%;
     display: block;
     margin: auto;
 
@@ -45,7 +45,7 @@
 
 @media (max-width: 1000px) {
     .section-gallery figure img {
-        width: 70%;
+        width: 100%;
         display: block;
         margin: auto;
     

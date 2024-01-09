@@ -1,0 +1,23 @@
+.section-about article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.section-about article img{
+    width: 100%;
+}
+
+.section-about article footer a{
+    display: flex;
+    justify-content: end;
+    color: #ddd;
+    text-decoration: none;
+}
+@media (max-width: 1000px) {
+    .section-about article{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+}
