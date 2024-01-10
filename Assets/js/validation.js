@@ -31,7 +31,7 @@ var form = document.getElementById("MyForm");
 function submitForm(event) {
 
     //Preventing page refresh
-    // event.preventDefault();
+    event.preventDefault();
 }
 
 //Calling a function during form submission.
