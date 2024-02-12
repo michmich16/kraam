@@ -49,6 +49,6 @@ showImage();
 
 // vises billede i dom
 function showImage(){
-    let myURL = '/Assets/images/emo-kitchen/' + myGallery[myImageCount];
+    let myURL = './Assets/images/emo-kitchen/' + myGallery[myImageCount];
     myGalleryElement.src = myURL;
 }
