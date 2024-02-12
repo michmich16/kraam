@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&display=swap');
-@import url(/Assets/css/gallery1.css);
-@import url(/Assets/css/gallery2.css);
-@import url(/Assets/css/cookies.css);
-@import url(/Assets/css/modal.css);
-@import url(/Assets/css/form.css);
-@import url(/Assets/css/article.css);
+@import url(./Assets/css/gallery1.css);
+@import url(./Assets/css/gallery2.css);
+@import url(./Assets/css/cookies.css);
+@import url(./Assets/css/modal.css);
+@import url(./Assets/css/form.css);
+@import url(./Assets/css/article.css);
 
 * {
   margin: 0;
@@ -75,7 +75,7 @@ hgroup h1 {
 }
 
 hgroup div {
-  background-image: url(/Assets/images/giphy.gif);
+  background-image: url(./Assets/images/giphy.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
