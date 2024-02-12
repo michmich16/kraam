@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200&display=swap');
-@import url(./Assets/css/gallery1.css);
-@import url(./Assets/css/gallery2.css);
-@import url(./Assets/css/cookies.css);
-@import url(./Assets/css/modal.css);
-@import url(./Assets/css/form.css);
-@import url(./Assets/css/article.css);
+@import url(./gallery1.css);
+@import url(./gallery2.css);
+@import url(./cookies.css);
+@import url(./modal.css);
+@import url(./form.css);
+@import url(./article.css);
 
 * {
   margin: 0;
