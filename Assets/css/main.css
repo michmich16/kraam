@@ -75,7 +75,7 @@ hgroup h1 {
 }
 
 hgroup div {
-  background-image: url(Assets/images/giphy.gif);
+  background-image: url(/Assets/images/giphy.gif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
